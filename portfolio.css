@@ -5,7 +5,11 @@
 }
 
 body {
-  background-color: white;
+  /*background-color: white;*/
+  background-image: url("andrew-preble-187059.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
 }
 
 a {
@@ -18,16 +22,19 @@ a {
 }
 
 hr {
-  background-color: #0091BD;
-  height: 2px;
+  background-color: #F78233;
+  height: 3px;
   margin: 0 50px 0 50px;
 }
 
+span {
+  color: white;
+}
 
 /*SIDEBAR-------------------------------------------*/
 
 #sidebar {
-  background-color: #0091BD;
+  /*background-color: #0091BD;*/
   height: 100vh;
   width: 25%;
   padding: 3%;
@@ -39,7 +46,7 @@ hr {
 
 .sidebar_line {
   background-color: #F78233;
-  width: 120%;
+  width: 125%;
   height: 20px;
   margin-top: 50px;
   margin-left: -25%;
@@ -69,7 +76,7 @@ hr {
     -o-transform: translate(0px,0); /** Opera **/
     -moz-transform: translate(0px,0);
     transition: all .5s ease-in-out 0s;
-    background-color: #0091BD;
+    /*background-color: #0091BD;*/
     color: white;
 }
 
@@ -87,11 +94,11 @@ hr {
   width: 75%;
   height: 100vh;
   float: left;
-  color: black;
+  color: white;
 }
 
 .content_sections {
-  padding: 15% 5% 14% 14%;
+  padding: 8% 5% 10% 10%;
   text-align: justify;
   font-size: .85em;
   line-height: 25px;
@@ -133,8 +140,9 @@ hr {
 }
 
 #projects_section {
-  height: 100vh;
-  margin-top: -50px;
+  /*height: 100vh;*/
+  margin-top: -20px;
+  margin-left: 150px;
 }
 
 #about_section {
@@ -148,17 +156,20 @@ hr {
 }
 
 #contact_section {
-  height: 100vh;
+  margin-top: 10%;
+  margin-right: 5%;
+  height: 400px;
+  /*background-color: white;*/
 }
 
 .projects_images {
-  width: 25%;
+  width: 26%;
   float: left;
-  margin: 40px 60px 20px 60px;
+  margin: 25px 25px 20px 60px;
 }
 
 .skills_images > img {
-  width: 15%;
+  width: 50px;
   float: left;
   margin: 20px 10px 0 0;
   text-align: center;

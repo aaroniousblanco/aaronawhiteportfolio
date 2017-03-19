@@ -141,8 +141,8 @@ span {
 
 #projects_section {
   /*height: 100vh;*/
-  margin-top: -20px;
-  margin-left: 150px;
+  margin-top: 15px;
+  margin-left: 80px;
 }
 
 #about_section {
@@ -177,13 +177,14 @@ span {
 
 .footer {
   bottom: 0;
-  border: 2px solid red;
+  position: fixed;
+  text-align: center;
+  width: 100%;
 }
 
-.footer > img {
-  width: 10%;
-  margin: 20px 10px 0 0;
-  text-align: center;
+.footer > a > img {
+  width: 50px;
+  margin: 20px 10px 0 10px;
   bottom: 0px;
 }
 /*MEDIA QUERIES-------------------------------------------*/
@@ -197,6 +198,7 @@ span {
   }
   #main_content {
     width: 100%;
+    /*height: 150vh;*/
   }
   #about_section div > img {
     width: 200px;
@@ -209,20 +211,18 @@ span {
     margin: 20px 20px 10px 20px;
   }
   #projects_section {
-    height: 100vh;
     margin-top: 70px;
   }
 }
 @media (max-width: 500px){
-  /*#main_content {
-    margin-top: 70px;
-  }*/
   #home_page {
     margin-top: -250px;
     text-align: center;
     margin-left: 15%;
   }
-
+  #projects_section {
+    margin: 10% 10% 5% 10%;
+  }
 }
 @media (max-width: 400px){
   #about_section div > img {

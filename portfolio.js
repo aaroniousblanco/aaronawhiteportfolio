@@ -77,7 +77,6 @@ $(document).ready(function() {
 
   var bounceInUp = true; //this section triggers the bounce animation for the linkedin, github, and resume icons when the contact link is clicked on the top navbar
   $("#contact_top").on("click", function() {
-    console.log(bounceInUp);
     if (bounceInUp === true) {
       $("#shake, #shake2, #shake3").removeClass('bounceInUp').addClass("bounce").delay(1000).queue(function(){
       $(this).removeClass("bounce").dequeue();

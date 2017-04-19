@@ -41,7 +41,7 @@ $(document).ready(function() {
     $("#skills_section").hide();
     $("#home_page").hide();
     if($("div.projects").hasClass('left')){ //this if section slides the sidebar about item to the right and left
-        $("div.projects").removeClass('left').addClass('right'); //PER TOBY --> CAN PUT ALL OF THIS IN A FUNCTION AND REPEAT THIS SAME LOGIC BELOW FOR THE TOP NAVBAR OR RESTYLE THE LEFT NAVBAR INTO THE TOP NAVBAR USING A MEDIA QUERY
+        $("div.projects").removeClass('left').addClass('right'); 
         $(".projects > a").removeClass("left").addClass('right');
     }else if ($("div.projects").hasClass('right')) {
       $("div.projects").removeClass('right').addClass('left');

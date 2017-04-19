@@ -188,7 +188,7 @@ h5 {
 .projects_images {
   width: 22%;
   float: left;
-  margin: 60px 20px 20px 20px;
+  margin: 60px 50px 20px 20px;
 }
 
 .skills_images {
@@ -253,22 +253,20 @@ h5 {
   .skills_images > img {
     width: 50px;
     float: left;
-    margin: 20px 10px 0 25px;
+    margin: 20px 10px 0 5px;
     text-align: center;
   }
   #contact_section_left {
     width: 100%;
-    /*float: left;*/
     display: block;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 41px;
   }
   #contact_section_right {
     width: 100%;
-    /*float: left;*/
     display: block;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 41px;
   }
   #content_sections {
     padding: 8% 0% 10% 0%;
@@ -284,13 +282,14 @@ h5 {
     height: 90vh;
   }
   #projects_section {
-    margin: 15% 10% 5% 10%;
+    margin: 20% -10% 0% -4%;
     text-align: center;
+    width: 46vh;
   }
   .projects_images {
-    width: 27%;
-    float: left;
-    margin: 20px -8px 20px 43px;
+    width: 30%;
+    margin: 0px -8px 20px 87px;
+    clear: both;
   }
 
   #about_section {
@@ -298,7 +297,7 @@ h5 {
   }
   #about_section div > img {
     text-align: center;
-    margin: 0px 20px 20px 0;
+    margin: 0px 20px 20px 10px;
     float: left;
     width: 150px;
   }
@@ -308,18 +307,9 @@ h5 {
   .home_page_title p:nth-of-type(2) { /* for "full stack developer" in home page title*/
     font-size: .75em;
   }
-  .skills_images {
-    margin-left: 2%;
-  }
   .top_navbar_options > a {
     margin-left: 5%;
     font-size: 1.25em;
-  }
-  .skills_images > img {
-    width: 30px;
-    float: left;
-    margin: 20px 10px 0 25px;
-    text-align: center;
   }
 }
 

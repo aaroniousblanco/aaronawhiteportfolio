@@ -71,6 +71,10 @@ span {
   color: #F78233;
 }
 
+.right-a {
+  color: #F78233; 
+}
+
 .left {
   -webkit-transform: translate(0px,0); /** Chrome & Safari **/
   -o-transform: translate(0px,0); /** Opera **/

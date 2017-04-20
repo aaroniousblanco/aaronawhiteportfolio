@@ -17,17 +17,15 @@ $(document).ready(function() {
 
   $(".about").on("click", function() { //this toggles the about section, when the about link is clicked
     $("#about_section").show(200);
-    // slideToggle(800, "linear", function() {
-    // });
     $("#projects_section").hide(); //21-23 hide content sections other than about section when it is clicked
     $("#skills_section").hide();
     $("#home_page").hide();
     if($("div.about").hasClass('left')){ //this if section slides the sidebar about item to the right and left
         $("div.about").removeClass('left').addClass('right');
-        $(".about > a").removeClass("left").addClass('right');
+        $(".about > a").removeClass("left").addClass('right-a');
     } else if ($("div.about").hasClass('right')) {
       $("div.about").removeClass('right').addClass('left');
-      $(".about > a").removeClass("right").addClass('left');
+      $(".about > a").removeClass('right-a').addClass('left');
       $("#about_section").hide(200);
       $("#home_page").show(300);
     }
@@ -42,10 +40,10 @@ $(document).ready(function() {
     $("#home_page").hide();
     if($("div.projects").hasClass('left')){ //this if section slides the sidebar about item to the right and left
         $("div.projects").removeClass('left').addClass('right');
-        $(".projects > a").removeClass("left").addClass('right');
+        $(".projects > a").removeClass("left").addClass('right-a');
     }else if ($("div.projects").hasClass('right')) {
       $("div.projects").removeClass('right').addClass('left');
-      $(".projects > a").removeClass("right").addClass('left');
+      $(".projects > a").removeClass('right-a').addClass('left');
       $("#projects_section").hide(200);
       $("#home_page").show(300);
     }
@@ -60,10 +58,10 @@ $(document).ready(function() {
     $("#home_page").hide();
     if($("div.skills").hasClass('left')){ //this if section slides the sidebar about item to the right and left
         $("div.skills").removeClass('left').addClass('right');
-        $(".skills > a").removeClass("left").addClass('right');
+        $(".skills > a").removeClass("left").addClass('right-a');
     }else if ($("div.skills").hasClass('right')) {
       $("div.skills").removeClass('right').addClass('left');
-      $(".skills > a").removeClass("right").addClass('left');
+      $(".skills > a").removeClass('right-a').addClass('left');
       $("#skills_section").hide(200);
       $("#home_page").show(300);
     }

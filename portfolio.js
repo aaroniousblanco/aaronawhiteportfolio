@@ -41,7 +41,7 @@ $(document).ready(function() {
     $("#skills_section").hide();
     $("#home_page").hide();
     if($("div.projects").hasClass('left')){ //this if section slides the sidebar about item to the right and left
-        $("div.projects").removeClass('left').addClass('right'); 
+        $("div.projects").removeClass('left').addClass('right');
         $(".projects > a").removeClass("left").addClass('right');
     }else if ($("div.projects").hasClass('right')) {
       $("div.projects").removeClass('right').addClass('left');
@@ -127,6 +127,26 @@ $(document).ready(function() {
       $("#home_page").addClass("down");
       $("#home_page").show(800);
     }
+  });
+
+  // Tooltip only Text
+  $('.masterTooltip').hover(function(){
+          // Hover over code
+          var title = $(this).attr('title');
+          $(this).data('tipText', title).removeAttr('title');
+          $('<p class="tooltip"></p>')
+          .text(title)
+          .appendTo('body')
+          .fadeIn('slow');
+  }, function() {
+          // Hover out code
+          $(this).attr('title', $(this).data('tipText'));
+          $('.tooltip').remove();
+  }).mousemove(function(e) {
+          var mousex = e.pageX - 30; //Get X coordinates
+          var mousey = e.pageY - 75; //Get Y coordinates
+          $('.tooltip')
+          .css({ top: mousey, left: mousex });
   });
 
 }); //end of dom ready

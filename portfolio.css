@@ -171,7 +171,7 @@ span {
 }
 
 #skills_section {
-  margin-top: 15%;
+  margin-top: 6%;
   height: 400px;
   font-size: 1.25em;
   text-align: center;
@@ -180,9 +180,9 @@ span {
 }
 
 #contact_section_left {
-  width: 50%;
   float: left;
   text-align: center;
+  padding: 50px 100px;
 }
 
 h5 {
@@ -296,7 +296,7 @@ h5 {
     width: 100%;
     display: block;
     text-align: center;
-    margin-top: 41px;
+    padding: 50px 50px;
   }
   #contact_section_right {
     width: 100%;

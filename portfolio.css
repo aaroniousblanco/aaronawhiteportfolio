@@ -151,28 +151,28 @@ span {
 #projects_section {
   height: 90vh;
   margin-top: 15px;
-  width: 100vh;
+  width: 100%;
 }
 
 #about_section {
-  height: 100vh;
+  height: 100%;
 }
 
 #about_section p {
   margin-right: 40px;
-  font-size: 20px;
-  word-spacing: 3px;
+  font-size: 18px;
 }
 
 #about_section div > img {
-  width: 300px;
+  width: 200px;
   margin: 0 20px 20px 56px;
+  border: solid 4px black;
   float: left;
 }
 
 #skills_section {
   margin-top: 6%;
-  height: 400px;
+  width: 100%;
   font-size: 1.25em;
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
@@ -210,14 +210,12 @@ h5 {
 
 .skills_images {
   text-align: center;
-  margin-left: 10%;
+  margin-left: 12%;
 }
 
 .skills_images > img {
-  width: 60px;
-  float: left;
+  width: 85px;
   margin: 20px 10px 0 25px;
-  text-align: center;
 }
 .skills_images label {
     font-size: 10px;
@@ -288,7 +286,7 @@ h5 {
     margin-left: 18%;
   }
   .skills_images > img {
-    width: 50px;
+    width: 70px;
     float: left;
     margin: 20px 10px 0 5px;
     text-align: center;
@@ -297,7 +295,7 @@ h5 {
   #skills_section {
     margin-top: 15%;
     height: 400px;
-    font-size: 1.25em;
+    font-size: 1.15em;
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
     padding: 0px;

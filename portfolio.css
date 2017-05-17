@@ -31,6 +31,10 @@ span {
   color: white;
 }
 
+h5 {
+    margin-left: 10%;
+}
+
 /*SIDEBAR-------------------------------------------*/
 
 #sidebar {
@@ -93,6 +97,33 @@ span {
 
 
 /*MAIN CONTENT SECTION-------------------------------------------*/
+.contenthover {
+    padding:20px 20px 10px 20px;
+    text-align: center;
+}
+
+
+.contenthover, .contenthover h3, contenthover a {
+    color:#fff;
+}
+
+.contenthover h3, .contenthover p {
+    margin:0 0 10px 0; line-height:1em;
+    padding:0;
+}
+
+.contenthover a.mybutton {
+    padding: 10px;
+    background:#3c9632;
+    color:#fff;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+    font-size: 15px;
+}
+
+.contenthover a.mybutton:hover {
+    background:#34742d
+}
+
 
 #main_content {
   width: 74%;
@@ -105,11 +136,9 @@ span {
 }
 
 .content_sections {
-  padding-top: 10%;
-  text-align: justify;
-  font-size: .85em;
-  line-height: 25px;
-  font-family: 'Roboto', sans-serif;
+   font-size: .85em;
+   line-height: 17px;
+   font-family: 'Roboto', sans-serif;
 }
 
 .top_navbar {
@@ -149,31 +178,31 @@ span {
 }
 
 #projects_section {
-  height: 90vh;
-  margin-top: 15px;
+height: 90vh;
+  margin-top: 50px;
   width: 100%;
+  margin-left: 45%;
 }
 
-#about_section {
-  height: 100%;
-}
-
-#about_section p {
-  margin-right: 40px;
-  font-size: 18px;
-}
 
 #about_section div > img {
   width: 200px;
-  margin: 0 20px 20px 56px;
-  border: solid 4px black;
-  float: left;
+  margin: 70px 20px 20px 33%;
+  border: solid 4px #F78233;
+  border-radius: 100px;
+}
+
+#about_section div {
+    margin: 10px 50px 0px 100px;
+    font-size: 18px;
+    color: black;
+    line-height: 25px;
 }
 
 #skills_section {
   margin-top: 6%;
   width: 100%;
-  font-size: 1.25em;
+  font-size: 1.35em;
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
   padding: 19px;
@@ -196,13 +225,13 @@ h5 {
 }
 
 .projects_images {
-  width: 22%;
-  float: left;
-  margin: 60px 50px 20px 20px;
+    width: 22%;
+  margin: -21px 50px 20px 20px;
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 20px;
 }
+
 
 .projects_images p {
     margin-left: 16px;
@@ -268,19 +297,21 @@ h5 {
     width: 100%;
     height: 120vh;
   }
+
   #about_section div img {
-    text-align: center;
-    width: 200px;
-    margin: 0px 20px 20px 10px;
-    float: left;
+      width: 150px;
+      margin: 0 20px 20px 90px;
   }
+
   #about_section {
-    margin-top: 70px;
+    margin-top: 80px;
   }
-  #about_section p {
-    font-size: 15px;
-    text-align: left;
+
+  #about_section div {
+      font-size: 14px;
+  margin-left: 20px;
   }
+
   .skills_images {
     text-align: center;
     margin-left: 18%;
@@ -304,7 +335,7 @@ h5 {
     width: 100%;
     display: block;
     text-align: center;
-    padding: 50px 50px;
+    padding: 50px 36px;
   }
   #contact_section_right {
     width: 100%;
@@ -326,30 +357,48 @@ h5 {
     height: 90vh;
   }
   #projects_section {
-    margin: 20% -10% 0% -4%;
+    margin: 80px -10% 0% 15%;
     text-align: center;
     width: 46vh;
   }
   .projects_images {
-    width: 30%;
-    margin: 0px -8px 20px 87px;
+    width: 200px;
+    margin: 0px -8px 0px 87px;
     clear: both;
     font-size: 19px;
   }
-  #about_section {
-    margin-top: 70px;
-  }
-  #about_section div > p {
-    width: 95%;
-    margin-left: 10px;
-    text-align: justify;
-  }
+
   .home_page_title p:nth-of-type(2) { /* for "full stack developer" in home page title*/
     font-size: .75em;
   }
   .top_navbar_options > a {
     margin-left: 5%;
     font-size: 1.25em;
+  }
+}
+
+@media (max-width: 375px){ /* for iPhone 5 responsiveness */
+  .skills_images > img {
+    width: 30px;
+    float: left;
+    margin: 20px 10px 0 13px;
+    text-align: center;
+  }
+  .top_navbar_options > a {
+    margin-left: 5%;
+    font-size: 1em;
+  }
+  #projects_section {
+    margin: 20% -10% 0% 0%;
+    text-align: center;
+  }
+  #skills_section {
+    margin-top: 15%;
+    height: 400px;
+    font-size: 1.25em;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 0px;
   }
 }
 
@@ -365,9 +414,8 @@ h5 {
     font-size: 1em;
   }
   #projects_section {
-    margin: 20% -10% 0% -15%;
+    margin: 20% -10% 0% 0%;
     text-align: center;
-    width: 46vh;
   }
   #skills_section {
     margin-top: 15%;
@@ -376,5 +424,13 @@ h5 {
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
     padding: 0px;
+  }
+  #about_section div {
+      font-size: 10px;
+      line-height: 20px;
+  margin-left: 20px;
+  }
+  #about_section div img{
+  margin-left: 60px;
   }
 }

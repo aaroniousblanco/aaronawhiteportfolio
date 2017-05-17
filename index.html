@@ -10,6 +10,8 @@
          src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <script type = "text/javascript"
          src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+         <script src="jquery.contenthover.js"></script>
+
     <script src="portfolio.js" charset="utf-8"></script>
     <title>Aaron White</title>
   </head>
@@ -50,31 +52,40 @@
             <img src="IMG_2021.jpg" alt="Aaron White">
           </div>
           <div>
-            <p>
-              Hi, I'm Aaron. I'm an avid traveler, music lover, craft beer enthusiast, and I love to code. <br><br> I'm currently a full stack development student at Digital Crafts, a full time coding bootcamp in Atlanta. I graduate at the end of May (2017), and I'm beginning to pursue career opportunities. <br><br> So, please take a look at my project portfolio and reach out if you'd like to learn more.
+              Hi, I'm Aaron. I'm an avid traveler, music lover, craft beer enthusiast, and I love to code. <br><br> I'm currently a full stack development student at Digital Crafts, a full time coding bootcamp in Atlanta. I graduate at the end of May (2017), and I'm beginning to pursue career opportunities. <br><br> Please take a look at my project portfolio and reach out if you'd like to learn more.
               <br><br> I look forward to talking to you!
-            </p>
           </div>
         </div>
         <div id="projects_section" class="content_sections">
-          <div class="projects_images">
-            <a href="http://getfreshapp.us/" target="_blank"><img src="carrot.svg" alt=""></a>
-            <p>GetFresh!</p>
-          </div>
-          <div class="projects_images">
-            <a href="http://tic-tac-toe-game.aaronawhite.com/" target="_blank"><img src="tic-tac-toe.svg" alt=""></a>
-            <p>Tic-Tac-Toe</p>
-          </div>
-          <div class="projects_images">
-            <a href="http://yahtzee.aaronawhite.com/" target="_blank"><img src="dice.svg" alt=""></a>
-            <p>Yahtzee!</p>
-          </div>
+            <img id="getfresh" src="getfresh.png" width="250" height="160" />
+            <div class="contenthover">
+                <h3>GetFresh!</h3>
+                <p>The app for farmers market fans. Built with JavaScript, Express, CSS, and HTML.</p>
+                <a href="http://getfreshapp.us/" target="_blank" class="mybutton">Live Site</a>
+                <a href="#" target="_blank" class="mybutton">GitHub</a>
+            </div>
+            <br>
+            <img id="tic-tac-toe" src="tic-tac-toe.png" width="250" height="160" />
+            <div class="contenthover">
+                <h3>Tic-Tac-Toe</h3>
+                <p>The game, built with jQuery, JavaScript, CSS, and HTML.</p>
+                <a href="http://tic-tac-toe-game.aaronawhite.com/" target="_blank" class="mybutton">Live Site</a>
+                <a href="#" target="_blank" class="mybutton">GitHub</a>
+            </div>
+            <br>
+            <img id="yahtzee" src="yahtzee.png" width="250" height="160" />
+            <div class="contenthover">
+                <h3>Yahtzee!</h3>
+                <p>The classic dice game, built with React, CSS, and HTML.</p>
+                <a href="http://yahtzee.aaronawhite.com/" target="_blank" class="mybutton">Live Site</a>
+                <a href="#" target="_blank" class="mybutton">GitHub</a>
+            </div>
         </div>
         <div id="skills_section" class="content_sections">
           <div id="contact_section_left">
             <h5>
             Technologies I Currently Use
-            </h5>
+        </h5>
             <div class="skills_images">
               <img src="javascript.svg" alt="">
               <img src="nodejs-logo.svg" alt="">

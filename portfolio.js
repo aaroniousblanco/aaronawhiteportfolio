@@ -147,7 +147,7 @@ $(document).ready(function() {
           .css({ top: mousey, left: mousex });
   });
 
-  $("#getfresh, #picnik, #yahtzee").contenthover({
+  $("#getfresh, #yahtzee, #picnik").contenthover({
     overlay_background:'#000',
     overlay_opacity:0.8
     });

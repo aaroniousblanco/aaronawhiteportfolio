@@ -154,7 +154,6 @@ h5 {
   width: 100%;
   font-size: .85em;
   font-family: 'Roboto', sans-serif;
-  float: left;
 }
 
 .top_navbar_options > a {
@@ -224,8 +223,8 @@ h5 {
 }
 
 .projects_images {
-    width: 22%;
-  margin: -21px 50px 20px 20px;
+    /*width: 22%;*/
+  /*margin: -21px 50px 20px 20px;*/
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 20px;
